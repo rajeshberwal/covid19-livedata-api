@@ -1,5 +1,38 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container
+    h1= title
+    h4 How To Use
+    p All the codes are open sorce. Visit 
+      a(href='https://github.com/rajeshberwal/covid19-livedata') Github
+    p all the routes are given below:
+
+      table.table
+        thead(style={color:'#E85A4F'})
+          tr
+            th Type of Data
+            th route
+        tbody(style={color:'#8E8D8A'})
+          tr
+            td Entire Data
+            td 
+              a(href='/api') /api
+          tr
+            td Total Cases Country Wise
+            td
+              a(href='/api/countries') /api/countries
+          tr
+            td Total Active Cases
+            td
+              a(href='/api/active-cases') /api/active-cases
+          tr
+            td Total Recovered
+            td
+              a(href='/api/total-recovered') /api/total-recovered
+          tr
+            td Total Deaths
+            td 
+              a(href='/api/total-deaths') /api/total-deaths
+    p if you have any suggetion or query then DM us on instagram : 
+      a(href='https://instagram.com/theinterviewcodes') Instagram
