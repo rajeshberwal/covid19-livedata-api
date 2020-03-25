@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var allDataRouter = require('./routes/allData');
@@ -13,9 +12,6 @@ var totalRecoveredRouter = require('./routes/totalRecovered');
 var totalDeathsRouter = require('./routes/totalDeaths');
 
 var app = express();
-
-// for react uses on localhost
-app.use(cors({ origin: 'http://localhost:3001' }));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
