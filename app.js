@@ -11,6 +11,7 @@ var countriesRouter = require('./routes/countries');
 var activeCasesRouter = require('./routes/activeCases');
 var totalRecoveredRouter = require('./routes/totalRecovered');
 var totalDeathsRouter = require('./routes/totalDeaths');
+var customSearchRouter = require('./routes/customSearch');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use('/api/countries', countriesRouter);
 app.use('/api/active-cases', activeCasesRouter);
 app.use('/api/total-recovered', totalRecoveredRouter);
 app.use('/api/total-deaths', totalDeathsRouter);
+app.use('/api/country', customSearchRouter); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

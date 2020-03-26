@@ -6,13 +6,14 @@ It's a simple API without any authentication with only get requests. We created 
 
 ### Routes
 
-| Type Of Data                            | route                   |
-| --------------------------------------- |-------------------------:|
-| Global Data                             | /api                    |
-| Total Confirmed Cases Country Wise      | /api/countries          |
-| Total Active Cases                      | /api/active-cases       |
-| Total Recovered                         | /api/total-recovered    |
-| Total Deaths                            | /api/total-deaths       |
+| Type Of Data                            | route                     |
+| --------------------------------------- |--------------------------:|
+| Global Data                             | /api                      |
+| Custom Search Trough Country Name       | /api/country/country_name |
+| Total Confirmed Cases Country Wise      | /api/countries            |
+| Total Active Cases                      | /api/active-cases         |
+| Total Recovered                         | /api/total-recovered      |
+| Total Deaths                            | /api/total-deaths         |
 
 ## Usage
 
