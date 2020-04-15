@@ -21,6 +21,7 @@ It's a simple API without any authentication with only get requests. We created 
 2. `cd covid19-livedata-api`
 3. `npm install`
 4. to run locally: `npm start`
+5. Server will run on: `http://localhost:5000`
 
 #### All the data updates after a short period of time
 
